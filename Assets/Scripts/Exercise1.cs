@@ -11,11 +11,11 @@ public class Exercise1 : MonoBehaviour
         while(counter<20){
             counter++;
             int random_number= Random.Range(1,20);
-            if(random_number==15) break;
-            else if(random_number==5){
-                continue;
-            }
+            if(random_number==5) continue;
             Debug.Log(random_number);
+            if(random_number==15){
+                break;
+            }
         }
     }
 
